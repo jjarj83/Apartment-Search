@@ -1,27 +1,162 @@
+
 <!doctype html>
 <html>
 <head>
-<title>Apartment Name</title>
+<title></title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="config.js"></script>
+<script src="generate_page.js"></script>
 </head>
 <body>
 <div class="content-container">
   <div class="grid-container">
-      <div class="header">
-        <h1>Union Flats</h1>
-        <p>Address: 415 Center Pointe Dr, Mechanicsburg, PA 17050</p>
-        <p>
-          <a href="https://www.apartments.com/union-flats-mechanicsburg-pa/qhdlwhx/" target="_blank">Apartments.com Link</a> |
-          <a href="https://www.unionflatspa.com/" target="_blank">Website</a>
-        </p>
-      </div>
-      <div class="about">
-        <h2>About This Property</h2>
-        <p>
-          Union Flats has set a new standard for apartments in Mechanicsburg.
-          This brand new luxury apartment community of one and two bedroom apartment homes has all the amenities you've come to expect and more!
-        </p>
-      </div>
-
+    <div class="header">
+      <h1>Union Flats</h1>
+      <p>Address: 415 Center Pointe Dr, Mechanicsburg, PA 17050</p>
+      <p>
+        <a href="https://www.apartments.com/union-flats-mechanicsburg-pa/qhdlwhx/" target="_blank">Apartments.com Link</a> |
+        <a href="https://www.unionflatspa.com/" target="_blank">Website</a>
+      </p>
+      <p>Type: Apartment | Rent: $1,525/mo | Beds: 2 Baths: 2</p>
+    </div>
+    <div class="ratings">
+      <h2>Ratings</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><a href="https://www.google.com/search?q=union%20flats&oq=unionflats&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALiCzsYYKyGpX31OtEqmNIFiIERtY667TA:1671042188333&rflfq=1&num=10&rldimm=12331037482093702692&lqi=Cgt1bmlvbiBmbGF0c0iYzoz9hquAgAhaHRAAEAEYABgBIgt1bmlvbiBmbGF0cyoGCAIQABABkgEXYXBhcnRtZW50X3JlbnRhbF9hZ2VuY3maASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUlhjemxQVTE5M1JSQUKqARMQASoPIgt1bmlvbiBmbGF0cygA4AEA&ved=2ahUKEwjj5Kig3fn7AhVdGVkFHTl3A8IQvS56BAgSEAE&sa=X&rlst=f#rlfi=hd:;si:12331037482093702692,l,Cgt1bmlvbiBmbGF0c0iYzoz9hquAgAhaHRAAEAEYABgBIgt1bmlvbiBmbGF0cyoGCAIQABABkgEXYXBhcnRtZW50X3JlbnRhbF9hZ2VuY3maASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUlhjemxQVTE5M1JSQUKqARMQASoPIgt1bmlvbiBmbGF0cygA4AEA;mv" target="_blank">Google:</a></td>
+            <td>4.4/5</td>
+          </tr>
+          <tr>
+            <td>Anna:</td>
+            <td><input type="number" placeholder="0" min="0" max="5">/5</td>
+          </tr>
+          <tr>
+            <td><input type="button" value="save"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="about">
+      <h2>About This Property</h2>
+      <p>
+        Union Flats has set a new standard for apartments in Mechanicsburg.
+        This brand new luxury apartment community of one and two bedroom apartment homes has all the amenities you've come to expect and more!
+      </p>
+    </div>
+    <div class="main-pic">
+      <img src="union-flats/main-pic.png" style="height:500px; width:500px;">
+    </div>
+    <div class="expenses">
+      <h2>Estimated Expenses</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Rent:</td>
+            <td>$1525/mo</td>
+          </tr>
+          <tr>
+            <td>Utilities:</td>
+            <td>$210/mo</td>
+          </tr>
+          <tr>
+            <td>Internet (Verizon Fios):</td>
+            <td>$40/mo</td>
+          </tr>
+          <tr>
+            <td>Total:</td>
+            <td>$1775/mo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="destinations">
+      <h2>Destinations</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>JJ Work:</td>
+            <td>12 min drive<br>
+              18 min bike<br>
+            </td>
+          </tr>
+          <tr>
+            <td>Anna Work:</td>
+            <td>N/A<br></td>
+          </tr>
+          <tr>
+            <td>Weis:</td>
+            <td>7 min drive<br>
+              9 min bike<br>
+            </td>
+          </tr>
+          <tr>
+            <td>Wegmans:</td>
+            <td>11 min drive<br></td>
+          </tr>
+          <tr>
+            <td>Aldi:</td>
+            <td>12 min drive</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pet-policy">
+      <h2>Pet Policy</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Allowed:</td>
+            <td>Dogs & Cats<br>
+          </tr>
+          <tr>
+            <td>Weigh Limit:</td>
+            <td>200lbs</td>
+          </tr>
+          <tr>
+            <td>Monthly Fee:</td>
+            <td>$25</td>
+          </tr>
+          <tr>
+            <td>Initial Fee:</td>
+            <td>$250</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notes">
+      <h2>Notes</h2>
+      <p>Amenities: Pool & Fitness Center</p>
+      <p>Lawn Care: Yes</p>
+    </div>
+  </div>
+  <h2 style="margin-top: 100px; margin-bottom: 5px;">Gallery</h2>
+  <div class="flex-container">
+    <div class="flex-item">
+      <img src="union-flats/gallery1.png">
+    </div>
+    <div class="flex-item">
+      <img src="union-flats/gallery2.png">
+    </div>
+    <div class="flex-item">
+      <img src="union-flats/gallery3.png">
+    </div>
+    <div class="flex-item">
+      <img src="union-flats/gallery4.png">
+    </div>
+    <div class="flex-item">
+      <img src="union-flats/gallery5.png">
+    </div>
+    <div class="flex-item">
+      <img src="union-flats/gallery6.png">
+    </div>
+    <div class="flex-item">
+      <img src="union-flats/gallery7.png">
+    </div>
+    <div class="flex-item">
+      <img src="union-flats/gallery8.png">
+    </div>
   </div>
 </div>
 </body>

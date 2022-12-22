@@ -1,0 +1,45 @@
+body {
+  font-family: Trebuchet MS,Lucida,Grande;
+}
+
+h1, h2 {
+  margin-bottom: 2px;
+}
+
+p {
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+td {
+  vertical-align: top;
+}
+
+.content-container {
+  margin: 25px 150px;
+}
+
+
+.header { grid-area: header; }
+.ratings { grid-area: ratings; margin-right: 50px; }
+.about { grid-area: about; }
+.main-pic { grid-area: main-pic; }
+.expenses { grid-area: expenses; }
+.destinations { grid-area: destinations; }
+.pet-policy { grid-area: pet-policy; }
+.notes { grid-area: notes; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header ratings'
+    'about about main-pic main-pic'
+    'expenses destinations main-pic main-pic'
+    'pet-policy notes main-pic main-pic'
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
